@@ -1,0 +1,46 @@
+{
+  "name": "nym-cli",
+  "description": "兼容npm和yarn的包工具.",
+  "version": "1.0.1",
+  "author": "liubin",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/51nb/nym-cli"
+  },
+  "keywords": [
+    "command",
+    "cli"
+  ],
+  "files": [
+    "app"
+  ],
+  "bin": {
+    "nym": "./app/bin/nym.js"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.26.0",
+    "cli-spinner": "^0.2.7",
+    "cmdu": "^2.0.10",
+    "cubb": "^1.0.5",
+    "inquirer": "^5.2.0",
+    "npm": "^5.6.0",
+    "semver": "^5.1.0",
+    "winattr": "^2.0.0",
+    "yarn": "1.5.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.0"
+  },
+  "scripts": {
+    "dev": "node ./build.js --dev",
+    "build": "node ./build.js",
+    "install": "node ./app/scripts/post-install.js"
+  },
+  "engine-strict": true,
+  "engines": {
+    "node": ">= 6.0"
+  },
+  "license": "MIT"
+}
